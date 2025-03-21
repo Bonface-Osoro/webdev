@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS Products Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0757fb333e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Kumbh Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('/images/rgb_sat.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .section img {
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .section p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .section img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>MARS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="/index.html" class="navbar__links"> Home </a></li>
+                <li class="navbar__item"><a href="/tech.html" class="navbar__links"> Technology </a></li>
+                <li class="navbar__item"><a href="/products.html" class="navbar__links"> Products</a></li>
+                <li class="navbar__item"><a href="/team.html" class="navbar__links"> Team </a></li>
+                <li class="navbar__btn"><a href="/blog.html" class="button"> Blog and News</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Revolutionizing Object Detection</h1>
+            <p>Leveraging the expertise of our inhouse skilled engineers and scientists, we specialize in delivering cutting-edge, 
+                cost-effective AI solutions tailored for military and federal agencies. Our real-time, AI-driven object 
+                detection solutions significantly enhance target and object identification across multi-wavelength 
+                sensors on diverse platforms, including drones and satellites. With a strong foundation in multispectral 
+                object detection and geolocation from airborne platforms, we empower military and federal agencies with 
+                advanced capabilities for precise and efficient mission-critical operations</p>
+        </div>
+    </div>
+
+    <!-- Technology Section -->
+    <div class="section" id="technology">
+        <img src="/images/pic4.png" alt="Satellite Technology">
+        <h2>Adaptive Target identification Solutions</h2>
+        <p>We develop adaptive multispectral image fusion methods optimized for object detection during all hours 
+            of the day. By fusing Red-Green-Blue (RGB), Near-Infrared (NIR) and Long-Wave Infrared (LWIR) sensors 
+            combined with cutting edge AI models, our solution outperform traditional single-sensor object 
+            detection methods. Furthermore, our solution allow sensor operators to automatically adjust fusion 
+            levels based on illumination and ground/air temperatures from the edge device’s attached photosensor 
+            and thermometer. This is a comparatively low-cost laser-target designator for 
+            multispectral object detection military and law enforcement applications.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/">4400 University Drive</a>
+                    <a href="/">Fairfax, Virginia</a>
+                    <a href="/">22030 US</a>
+                    <a href="/">Contact Info</a>
+                    <a href="/">mars@llc.com</a>
+                </div>
+            </div>
+            <div class="footer__link--items">
+                <h2>Videos</h2>
+                <a href="https://www.youtube.com/watch?v=kjM3M6c7qLo" target="_blank">Assessing thermal imagery integration into object detection methods</a>
+                <a href="https://www.youtube.com/watch?v=u_UzPQZnCxI" target="_blank">A proposed solution to modernize the antiquated RQ-11 Raven</a>
+                <a href="https://www.youtube.com/watch?v=VBJ-PFdToN0" target="_blank">Detecting mines with a drone and multispectral sensors</a>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fas fa-gem"></i>MARS</a>
+                </div>
+                <p class="website__rights">© MARS 2025. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="#" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0757fb333e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #333;
+            font-family: 'Kumbh Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #00509e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin-bottom: 1rem;
+        }
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Ensures 2 columns */
+            grid-auto-rows: auto; /* Automatically adjusts row height */
+            gap: 2rem;
+            width: 100%; /* Full width */
+            max-width: 100vw; /* Prevents overflow */
+            padding: 3rem;
+            transition: transform 0.3s ease;    
+        }
+
+        .resource {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .resource:hover {
+            transform: scale(1.02);
+        }
+
+        .resource h2 {
+            color: #00509e;
+            margin-bottom: 0.5rem;
+        }
+
+        .resource p {
+            margin-bottom: 1rem;
+        }
+
+        .resource a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .footer__links {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .footer__link--items h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer__link--items a {
+            display: block;
+            margin-bottom: 0.3rem;
+            color: white;
+            text-decoration: none;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .footer__container {
+            background-color: #090909;
+            padding-top: 2rem;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .footer__links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>MARS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="/index.html" class="navbar__links"> Home </a></li>
+                <li class="navbar__item"><a href="/tech.html" class="navbar__links"> Technology </a></li>
+                <li class="navbar__item"><a href="/products.html" class="navbar__links"> Products</a></li>
+                <li class="navbar__item"><a href="/team.html" class="navbar__links"> Team </a></li>
+                <li class="navbar__btn"><a href="/blog.html" class="button"> Blog and News </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Resources</h1>
+        <p>Explore various resources and materials provided by the DARA Project.</p>
+    </div>
+
+    <!-- Resources Section -->
+    <div class="resources">
+        <div class="resource">
+            <h2>Training Materials</h2>
+            <p>Comprehensive guides and tutorials for astronomy enthusiasts.</p>
+            <a href="#">Download</a>
+        </div>
+        <div class="resource">
+            <h2>Lecture Slides</h2>
+            <p>High-quality slides used during our workshops and seminars.</p>
+            <a href="#">View</a>
+        </div>
+        <div class="resource">
+            <h2>Research Papers</h2>
+            <p>Access various research publications related to radio astronomy.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="resource">
+            <h2>Project Reports</h2>
+            <p>Official reports documenting the progress and impact of DARA.</p>
+            <a href="#">Download</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investments</a>
+                <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>Contact Us</h2>
+                <a href="/">4400 University Drive</a>
+                <a href="/">Fairfax, Virginia</a>
+                <a href="/">22030 US</a>
+                <a href="/">Contact Info</a>
+                <a href="/">mars@llc.com</a>
+            </div>
+            <div class="footer__link--items">
+                <h2>Videos</h2>
+                <a href="https://www.youtube.com/watch?v=kjM3M6c7qLo" target="_blank">Assessing thermal imagery integration into object detection methods</a>
+                <a href="https://www.youtube.com/watch?v=u_UzPQZnCxI" target="_blank">A proposed solution to modernize the antiquated RQ-11 Raven</a>
+                <a href="https://www.youtube.com/watch?v=VBJ-PFdToN0" target="_blank">Detecting mines with a drone and multispectral sensors</a>
+            </div>
+        </div>
+
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo"><a href="/" id="footer__logo"><i class="fas fa-gem"></i>MARS</a></div>
+                <p class="website__rights">© MARS 2025. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
